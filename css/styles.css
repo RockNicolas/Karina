@@ -1,0 +1,98 @@
+body {
+  background: #0b0c10;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.music-player {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 15px;
+  gap: 15px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.music-player .cover {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.music-player .info {
+  flex: 1;
+  text-align: left;
+  color: #fff;
+}
+
+.music-player h4 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.music-player p {
+  margin: 0;
+  font-size: 12px;
+  color: #ccc;
+}
+
+.progress {
+  background: #444;
+  height: 5px;
+  border-radius: 5px;
+  margin: 5px 0;
+  overflow: hidden;
+}
+
+#progress-bar {
+  height: 100%;
+  width: 0%;
+  background: #1db954; 
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #aaa;
+}
+
+#play-pause {
+  background: #1db954;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.photo img {
+  width: 250px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  border: 3px solid #fff;
+}
+
+#contador {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.mensagem {
+  font-size: 1.1em;
+  margin-top: 20px;
+  line-height: 1.6;
+}

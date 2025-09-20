@@ -9,13 +9,25 @@
 <body>
   <div class="container">
 
-    <iframe style="border-radius:12px" 
-        src="https://open.spotify.com/intl-pt/track/2bidvM5hM1LGiEDkgp0EUz?si=347c04e04bfa419d" 
-        width="100%" height="80" frameBorder="0" 
-        allowfullscreen="" 
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
-    </iframe>
-
+    <div class="music-player">
+      <img src="/image/capamusica/capa.png" class="cover" alt="Capa do Álbum">
+      <div class="info">
+        <h4>Next To Me</h4>
+        <p>Vintage Culture Remix</p>
+        <div class="progress">
+          <div id="progress-bar"></div>
+        </div>
+        <div class="time">
+          <span id="current-time">0:00</span>
+          <span id="duration">0:00</span>
+        </div>
+      </div>
+      <button id="play-pause">▶️</button>
+      
+      <audio id="musica">
+  <source src="/musica/RÜFÜS DU SOL - Next To Me (Vintage Culture Remix)  - Cópia.mp3" type="audio/mpeg">
+</audio>
+    </div>
 
     <div class="photo">
       <img src="foto.jpg" alt="Nossa foto">
