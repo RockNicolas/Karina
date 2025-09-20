@@ -56,3 +56,25 @@ document.addEventListener('DOMContentLoaded', () => {
     playPauseBtn.textContent = "▶️";
   });
 });
+
+const track = document.querySelector(".carousel-track");
+const images = document.querySelectorAll(".carousel img");
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
+
+let index = 0;
+
+function showImage(i) {
+  if (i < 0) index = images.length - 1;
+  else if (i >= images.length) index = 0;
+  else index = i;
+
+  track.style.transform = `translateX(-${index * 250}px)`;
+}
+
+prevBtn.addEventListener("click", () => showImage(index - 1));
+nextBtn.addEventListener("click", () => showImage(index + 1));
+
+setInterval(() => {
+  showImage(index + 1);
+}, 3000);

@@ -96,3 +96,44 @@ body {
   margin-top: 20px;
   line-height: 1.6;
 }
+
+.carousel {
+  position: relative;
+  width: 250px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 3px solid #fff;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+  width: 250px;
+  flex-shrink: 0;
+  border-radius: 20px;
+}
+
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  font-size: 18px;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.carousel .prev {
+  left: 5px;
+}
+
+.carousel .next {
+  right: 5px;
+}
